@@ -27,6 +27,8 @@ class _LandingState extends State<Landing> {
       backgroundColor: bgColor1,
       body: listOfColors[currentIndex],
       bottomNavigationBar: BottomNavyBar(
+        animationDuration: Duration(milliseconds: 500),
+        curve: Curves.easeInOutCirc,
         backgroundColor: bgColor1,
         selectedIndex: currentIndex,
         onItemSelected: (index) {
@@ -36,21 +38,25 @@ class _LandingState extends State<Landing> {
         },
         items: <BottomNavyBarItem>[
           BottomNavyBarItem(
+            textAlign: TextAlign.center,
             icon: Icon(Icons.home),
             title: Text('Home'),
             activeColor: whitee,
           ),
           BottomNavyBarItem(
+            textAlign: TextAlign.center,
             icon: Icon(Icons.art_track),
             title: Text('About'),
             activeColor: whitee,
           ),
           BottomNavyBarItem(
+            textAlign: TextAlign.center,
             icon: Icon(Icons.design_services),
             title: Text('Services'),
             activeColor: whitee,
           ),
           BottomNavyBarItem(
+            textAlign: TextAlign.center,
             icon: Icon(Icons.home),
             title: Text('Contact'),
             activeColor: whitee,
