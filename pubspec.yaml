@@ -31,6 +31,7 @@ dependencies:
   bottom_navy_bar: ^6.0.0
   google_fonts: ^2.1.0
   get: ^4.3.4
+  animated_splash_screen: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +60,7 @@ flutter:
     - assets/icons/service1.png
     - assets/icons/service2.png
     - assets/icons/service3.png
+    - assets/icons/splashlogo.png
 #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

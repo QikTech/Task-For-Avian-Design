@@ -57,7 +57,7 @@ class _LandingState extends State<Landing> {
           ),
           BottomNavyBarItem(
             textAlign: TextAlign.center,
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.contact_mail),
             title: Text('Contact'),
             activeColor: whitee,
           ),

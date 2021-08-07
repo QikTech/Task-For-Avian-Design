@@ -93,7 +93,7 @@ class _ContactScreenState extends State<ContactScreen> {
               ),
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text('Email us at',
                     style: GoogleFonts.lato(
@@ -117,7 +117,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     )),
               ],
             ),
-            Text('\n\n\n Designed by Prasad Sawant',
+            Text('\n\n Designed by Prasad Sawant',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.lato(
                   textStyle: grayRegular18,

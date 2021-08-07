@@ -1,3 +1,4 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:task_for_avian_design/landing.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,19 @@ class MyApp extends StatelessWidget {
           bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
         ),
       ),
-      home: Landing(),
+      home: AnimatedSplashScreen(
+        backgroundColor: bgColor1,
+        duration: 1,
+        splash: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Image.asset(
+            'assets/icons/splashlogo.png',
+            fit: BoxFit.cover,
+          ),
+        ),
+        nextScreen: Landing(),
+        splashTransition: SplashTransition.fadeTransition,
+      ),
     );
   }
 }
