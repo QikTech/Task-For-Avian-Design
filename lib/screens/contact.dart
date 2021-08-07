@@ -1,4 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task_for_avian_design/colors.dart';
@@ -27,24 +28,22 @@ class _ContactScreenState extends State<ContactScreen> {
                       textStyle: regularHeading28,
                     )),
                 SizedBox(
-                  height: 14,
+                  height: 40,
                 ),
-                Text('Avian Design',
+                Text(
+                    'Have a project for us, want to partner with us or just want to have a cup of coffee. We would love to connect and make that happen.',
                     style: GoogleFonts.lato(
-                      textStyle: boldHeading28,
+                      textStyle: whiteRegular24,
                     )),
-                SizedBox(
-                  height: 100,
-                ),
+                SizedBox(height: 100),
                 Container(
-                  height: 300,
+                  height: 250,
                   width: 400,
                   decoration: new BoxDecoration(
-                    color: bgColor2,
-                    borderRadius: new BorderRadius.circular(16.0),
+                    color: accentt,
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(25.0),
+                    padding: const EdgeInsets.fromLTRB(50, 25, 25, 25),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -55,19 +54,15 @@ class _ContactScreenState extends State<ContactScreen> {
                               // text: 'Design is for ',
                               children: <TextSpan>[
                                 TextSpan(
-                                    text: 'Design is for ',
+                                    text: 'Get your free consultancy!',
                                     style: GoogleFonts.lato(
-                                      textStyle: whiteHeading32,
+                                      textStyle: whiteRegular22,
                                     )),
                                 TextSpan(
-                                    text: 'People',
+                                    text:
+                                        '\n\nLet\'s get down to discussing your project',
                                     style: GoogleFonts.lato(
-                                      textStyle: accentHeading32,
-                                    )),
-                                TextSpan(
-                                    text: '\n Not Products',
-                                    style: GoogleFonts.lato(
-                                      textStyle: whiteHeading32,
+                                      textStyle: blackText18,
                                     )),
                               ],
                             ),
@@ -75,62 +70,16 @@ class _ContactScreenState extends State<ContactScreen> {
                         ),
                         Expanded(
                           flex: 1,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('30+',
-                                      style: GoogleFonts.lato(
-                                        textStyle: accentText18,
-                                      )),
-                                  Text('Clients',
-                                      style: GoogleFonts.lato(
-                                        textStyle: whiteText18,
-                                      )),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('50+',
-                                      style: GoogleFonts.lato(
-                                        textStyle: accentText18,
-                                      )),
-                                  Text('Projects',
-                                      style: GoogleFonts.lato(
-                                        textStyle: whiteText18,
-                                      )),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('75%',
-                                      style: GoogleFonts.lato(
-                                        textStyle: accentText18,
-                                      )),
-                                  Text('Retention',
-                                      style: GoogleFonts.lato(
-                                        textStyle: whiteText18,
-                                      )),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('15+',
-                                      style: GoogleFonts.lato(
-                                        textStyle: accentText18,
-                                      )),
-                                  Text('Team',
-                                      style: GoogleFonts.lato(
-                                        textStyle: whiteText18,
-                                      )),
-                                ],
-                              ),
-                            ],
+                          child: TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              backgroundColor: Color(0xFF16181D),
+                              primary: whitee,
+                            ),
+                            child: Text(
+                              'Book Now',
+                              style: TextStyle(fontSize: 18),
+                            ),
                           ),
                         ),
                       ],
@@ -138,49 +87,41 @@ class _ContactScreenState extends State<ContactScreen> {
                   ),
                 ), //Card End
                 SizedBox(height: 40),
-                Text("Let's discuss your project  ->",
-                    style: GoogleFonts.lato(
-                      textStyle: accentBold24,
-                    )), //Let's discuss your project
-                SizedBox(
-                  height: 40,
-                ),
-
               ],
             ),
           ),
-          Center(child: Image.asset('assets/icons/ICO_down-arrow.png')),
-          SizedBox(height: 80),
           Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Why? How? What?',
+              Text('Email us at',
                   style: GoogleFonts.lato(
-                    textStyle: grayHeading32,
+                    textStyle: whiteRegular22,
                   )),
-              SizedBox(height: 30),
-              Text('Making design thinking easy for Startups!',
+              Text('info@aviandesign.in',
                   style: GoogleFonts.lato(
-                    textStyle: whiteSub16,
+                    textStyle: accentRegular22,
                   )),
-              Center(child: Image.asset('assets/icons/peoples.png')),
-              SizedBox(height: 30),
-              Text('We are all about Design!',
+              Text('\n\nCall us at',
                   style: GoogleFonts.lato(
-                    textStyle: accentText18,
+                    textStyle: whiteRegular22,
                   )),
-              SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(40,8,40,40),
-                child: Text(
-                    'We collaborate with you and your team to empathise, be creative, and run successful Design Sprints to leverage Design Thinking in your product journey!',
-                    textAlign: TextAlign.justify,
-                    style: GoogleFonts.lato(
-                      textStyle: whiteBold18,
-                    )),
-              ),
+              Text('+1 812 558 3209',
+                  style: GoogleFonts.lato(
+                    textStyle: accentRegular22,
+                  )),
+              Text('+91 935 490 6525',
+                  style: GoogleFonts.lato(
+                    textStyle: accentRegular22,
+                  )),
             ],
           ),
+          Text('\n\n\n Designed by Prasad Sawant',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.lato(
+                textStyle: grayRegular18,
+              )),
+          SizedBox(height: 40),
+
         ],
       ),
     );
