@@ -4,12 +4,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:task_for_avian_design/colors.dart';
 import 'package:task_for_avian_design/landing.dart';
 
+import '../typography.dart';
+
 class HomeScreen extends StatefulWidget {
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -22,18 +26,14 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Text('Welcome To',
                     style: GoogleFonts.lato(
-                      fontSize: 28,
-                      color: accentt,
-                      fontWeight: FontWeight.normal,
+                      textStyle: regularHeading28,
                     )),
                 SizedBox(
-                  height: 20,
+                  height: 14,
                 ),
                 Text('Avian Design',
                     style: GoogleFonts.lato(
-                      fontSize: 28,
-                      color: whitee,
-                      fontWeight: FontWeight.w800,
+                      textStyle: boldHeading28,
                     )),
                 SizedBox(
                   height: 100,
@@ -53,30 +53,23 @@ class _HomeScreenState extends State<HomeScreen> {
                         Expanded(
                           flex: 3,
                           child: RichText(
-                            textAlign: TextAlign.left,
                             text: TextSpan(
                               // text: 'Design is for ',
                               children: <TextSpan>[
                                 TextSpan(
                                     text: 'Design is for ',
                                     style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: whitee,
-                                      fontWeight: FontWeight.w800,
+                                      textStyle: whiteHeading32,
                                     )),
                                 TextSpan(
                                     text: 'People',
                                     style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: accentt,
-                                      fontWeight: FontWeight.w800,
+                                      textStyle: accentHeading32,
                                     )),
                                 TextSpan(
                                     text: '\n Not Products',
                                     style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: whitee,
-                                      fontWeight: FontWeight.w800,
+                                      textStyle: whiteHeading32,
                                     )),
                               ],
                             ),
@@ -92,15 +85,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Text('30+',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: accentText18,
                                       )),
                                   Text('Clients',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: whiteText18,
                                       )),
                                 ],
                               ),
@@ -109,15 +98,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Text('50+',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: accentText18,
                                       )),
                                   Text('Projects',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: whiteText18,
                                       )),
                                 ],
                               ),
@@ -126,15 +111,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Text('75%',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: accentText18,
                                       )),
                                   Text('Retention',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: whiteText18,
                                       )),
                                 ],
                               ),
@@ -143,15 +124,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   Text('15+',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: accentText18,
                                       )),
                                   Text('Team',
                                       style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
+                                        textStyle: whiteText18,
                                       )),
                                 ],
                               ),
@@ -162,14 +139,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ), //Card End
-                SizedBox(
-                  height: 40,
-                ),
+                SizedBox(height: 40),
                 Text("Let's discuss your project  ->",
                     style: GoogleFonts.lato(
-                      fontSize: 24,
-                      color: accentt,
-                      fontWeight: FontWeight.w600,
+                      textStyle: accentBold24,
                     )), //Let's discuss your project
                 SizedBox(
                   height: 40,
@@ -185,25 +158,18 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Text('Why? How? What?',
                   style: GoogleFonts.lato(
-                    fontSize: 32,
-                    wordSpacing: 8,
-                      color: whitee,
-                    fontWeight: FontWeight.w900,
+                    textStyle: grayHeading32,
                   )),
               SizedBox(height: 30),
               Text('Making design thinking easy for Startups!',
                   style: GoogleFonts.lato(
-                    fontSize: 16,
-                    color: whitee,
-                    fontWeight: FontWeight.normal,
+                      textStyle: whiteSub16,
                   )),
               Center(child: Image.asset('assets/icons/peoples.png')),
               SizedBox(height: 30),
               Text('We are all about Design!',
                   style: GoogleFonts.lato(
-                    fontSize: 18,
-                    color: whitee,
-                    fontWeight: FontWeight.bold,
+                      textStyle: accentText18,
                   )),
               SizedBox(height: 30),
               Padding(
@@ -212,9 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     'We collaborate with you and your team to empathise, be creative, and run successful Design Sprints to leverage Design Thinking in your product journey!',
                     textAlign: TextAlign.justify,
                     style: GoogleFonts.lato(
-                      fontSize: 18,
-                      color: whitee,
-                      fontWeight: FontWeight.bold,
+                      textStyle: whiteBold18,
                     )),
               ),
             ],

@@ -2,6 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:task_for_avian_design/colors.dart';
 import 'package:task_for_avian_design/screens/about.dart';
+import 'package:task_for_avian_design/screens/contact.dart';
 import 'package:task_for_avian_design/screens/home.dart';
 import 'package:task_for_avian_design/screens/services.dart';
 
@@ -16,7 +17,7 @@ class _LandingState extends State<Landing> {
     HomeScreen(),
     AboutScreen(),
     ServicesScreen(),
-    Container(color: Colors.greenAccent,),
+    ContactScreen(),
     // Container(color: Colors.greenAccent,),
   ];
 

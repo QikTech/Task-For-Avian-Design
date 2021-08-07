@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:task_for_avian_design/colors.dart';
 import 'package:task_for_avian_design/landing.dart';
 
+import '../typography.dart';
+
 class ServicesScreen extends StatefulWidget {
   @override
   _ServicesScreenState createState() => _ServicesScreenState();
@@ -20,27 +22,6 @@ class _ServicesScreenState extends State<ServicesScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  textAlign: TextAlign.left,
-                  text: TextSpan(
-                    children: <TextSpan>[
-                      TextSpan(
-                          text: 'Our ',
-                          style: GoogleFonts.lato(
-                            fontSize: 28,
-                            color: whitee,
-                            fontWeight: FontWeight.w800,
-                          )),
-                      TextSpan(
-                          text: 'Services',
-                          style: GoogleFonts.lato(
-                            fontSize: 28,
-                            color: accentt,
-                            fontWeight: FontWeight.w800,
-                          )),
-                    ],
-                  ),
-                ), //OUR SERVICES
                 SizedBox(height: 40),
                 SingleChildScrollView(
                   scrollDirection: Axis.vertical,
@@ -51,171 +32,284 @@ class _ServicesScreenState extends State<ServicesScreen> {
                           color: bgColor2,
                           borderRadius: new BorderRadius.circular(16.0),
                         ),
-                        height: 900,
+                        height: 800,
                         width: 380,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Image.asset('assets/icons/service1.png'),
-                            
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 20),
+                                  Text('CONCEPT',
+                                      style: GoogleFonts.lato(
+                                        textStyle: regularHeading28,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('2 Weeks (25 Screens)',
+                                      style: GoogleFonts.lato(
+                                          textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 10),
+                                  Text(
+                                      '- Define Goals \n- User Personas \n- User Interviews \n- Use Case Scenario \n- Brainstorming \n- Impact vs Feasibility Analysis \n- Wireframing \n- High Fidelity Screens \n- Responsive Design \n- Prototype',
+                                      style: GoogleFonts.lato(
+                                          textStyle: whiteLight22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('Effort Est: 100 - 120 Hours \nPrice: 20 USD/Hour',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        flex: 2,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text('From:',
+                                                style: GoogleFonts.lato(
+                                                  textStyle: whiteRegular22,
+                                                )),
+                                            // Text("$1,949+",
+                                            Text("\$1,949+",
+                                                style: GoogleFonts.lato(
+                                                  textStyle: accentText18,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: TextButton(
+                                          onPressed: () {},
+                                          style: TextButton.styleFrom(
+                                            backgroundColor: accentt,
+                                            primary: whitee,
+                                          ),
+                                          child: Text(
+                                            'Book Now',
+                                            style: TextStyle(fontSize: 18),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
                     ],
                   ),
                 ), //CARDS HORIZONTAL
-                SizedBox(height: 100),
-                Center(
-                  child: RichText(
-                    textAlign: TextAlign.left,
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                            text: 'How we ',
-                            style: GoogleFonts.lato(
-                              fontSize: 32,
-                              color: whitee,
-                              fontWeight: FontWeight.w800,
-                            )),
-                        TextSpan(
-                            text: 'do it?',
-                            style: GoogleFonts.lato(
-                              fontSize: 32,
-                              color: accentt,
-                              fontWeight: FontWeight.w800,
-                            )),
-                      ],
-                    ),
-                  ),
-                ), //HOW WE DO IT
-                SizedBox(
-                  height: 40,
-                ),
-                Center(
-                  child: Text('DESIGN SPRINTS',
-                      style: GoogleFonts.lato(
-                        fontSize: 18,
-                        color: accentt,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ), //DESIGN SPRINTS
-                SizedBox(height: 50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/icons/image1.png'),
-                        SizedBox(height: 10),
-                        Text('01',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
-                            )),
-                        SizedBox(height: 5),
-                        Text('EMPATHISE',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
-                            )),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/icons/image2.png'),
-                        SizedBox(height: 10),
-                        Text('02',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
-                            )),
-                        SizedBox(height: 5),
-                        Text('IDEATE',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
-                            )),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/icons/image3.png'),
-                        SizedBox(height: 10),
-                        Text('03',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
-                            )),
-                        SizedBox(height: 5),
-                        Text('PROTOTYPE',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
-                            )),
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/icons/image3.png'),
-                        SizedBox(height: 10),
-                        Text('03',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
-                            )),
-                        SizedBox(height: 5),
-                        Text('PROTOTYPE',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
-                            )),
-                      ],
-                    ),Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/icons/image3.png'),
-                        SizedBox(height: 10),
-                        Text('03',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
-                            )),
-                        SizedBox(height: 5),
-                        Text('PROTOTYPE',
-                            style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
-                            )),
-                      ],
-                    ),
-                  ],
-                ),//Graphic 5 ELEMENTS
               ],
             ),
           ),
-          SizedBox(height: 80),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(40, 80, 40, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 40),
+                SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: new BoxDecoration(
+                          color: bgColor2,
+                          borderRadius: new BorderRadius.circular(16.0),
+                        ),
+                        height: 850,
+                        width: 380,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset('assets/icons/service3.png'),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 20),
+                                  Text('STARTUP',
+                                      style: GoogleFonts.lato(
+                                        textStyle: regularHeading28,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('4 Weeks (100 Screens)',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),SizedBox(height: 20),
+                                  Text('Everything in the \nConcept package +',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 10),
+                                  Text(
+                                      '- User Testing \n- Journey Mapping \n- Identifying Pain Points \n- Brainstorming \n- Impact vs Feasibility Analysis \n- Wireframing \n- High Fidelity Screens \n- Responsive Design \n- Prototype',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteLight22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('Effort Est: 225 - 300 Hours \nPrice: 20 USD/Hour',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        flex: 2,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text('From:',
+                                                style: GoogleFonts.lato(
+                                                  textStyle: whiteRegular22,
+                                                )),
+                                            Text("\$4,499+",
+                                                style: GoogleFonts.lato(
+                                                  textStyle: accentText18,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: TextButton(
+                                          onPressed: () {},
+                                          style: TextButton.styleFrom(
+                                            backgroundColor: accentt,
+                                            primary: whitee,
+                                          ),
+                                          child: Text(
+                                            'Book Now',
+                                            style: TextStyle(fontSize: 18),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ), //CARDS HORIZONTAL
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(40, 80, 40, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 40),
+                SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: new BoxDecoration(
+                          color: bgColor2,
+                          borderRadius: new BorderRadius.circular(16.0),
+                        ),
+                        height: 880,
+                        width: 380,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Image.asset('assets/icons/service2.png'),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 20),
+                                  Text('BUILD TO SCALE',
+                                      style: GoogleFonts.lato(
+                                        textStyle: regularHeading28,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('Variable',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),SizedBox(height: 20),
+                                  Text('Get a series of sprints tailored \nto design your product for scale',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 10),
+                                  Text('- Define \n- Empathise \n- Ideate \n- Prototype \n- User Testing \n- Re-iterate \n- Final Design \n\nLet us set up your design team!',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteLight22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Text('Effort Est: 500+ Hours \nPrice: 15 USD/Hour',
+                                      style: GoogleFonts.lato(
+                                        textStyle: whiteRegular22,
+                                      )),
+                                  SizedBox(height: 20),
+                                  Row(
+                                    children: [
+                                      Expanded(
+                                        flex: 2,
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text('From:',
+                                                style: GoogleFonts.lato(
+                                                  textStyle: whiteRegular22,
+                                                )),
+                                            // Text("$1,949+",
+                                            Text("\$7500+",
+                                                style: GoogleFonts.lato(
+                                                  textStyle: accentText18,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                      Expanded(
+                                        flex: 1,
+                                        child: TextButton(
+                                          onPressed: () {},
+                                          style: TextButton.styleFrom(
+                                            backgroundColor: accentt,
+                                            primary: whitee,
+                                          ),
+                                          child: Text(
+                                            'Book Now',
+                                            style: TextStyle(fontSize: 18),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ), //CARDS HORIZONTAL
+              ],
+            ),
+          ),
         ],
       ),
     );
-
   }
 }

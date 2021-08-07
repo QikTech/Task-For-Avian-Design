@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:task_for_avian_design/colors.dart';
 import 'package:task_for_avian_design/landing.dart';
 
+import '../typography.dart';
+
 class AboutScreen extends StatefulWidget {
   @override
   _AboutScreenState createState() => _AboutScreenState();
@@ -28,16 +30,12 @@ class _AboutScreenState extends State<AboutScreen> {
                       TextSpan(
                           text: 'Why Choose ',
                           style: GoogleFonts.lato(
-                            fontSize: 28,
-                            color: whitee,
-                            fontWeight: FontWeight.w800,
+                              textStyle: whiteHeading32,
                           )),
                       TextSpan(
                           text: 'Us?',
                           style: GoogleFonts.lato(
-                            fontSize: 28,
-                            color: accentt,
-                            fontWeight: FontWeight.w800,
+                            textStyle: accentHeading32,
                           )),
                     ],
                   ),
@@ -199,16 +197,12 @@ class _AboutScreenState extends State<AboutScreen> {
                         SizedBox(height: 10),
                         Text('01',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
+                              textStyle: accentText18,
                             )),
                         SizedBox(height: 5),
                         Text('EMPATHISE',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
+                              textStyle: whiteText18,
                             )),
                       ],
                     ),
@@ -219,16 +213,13 @@ class _AboutScreenState extends State<AboutScreen> {
                         SizedBox(height: 10),
                         Text('02',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
+                              textStyle: accentText18,
+
                             )),
                         SizedBox(height: 5),
                         Text('IDEATE',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
+                              textStyle: whiteText18,
                             )),
                       ],
                     ),
@@ -239,16 +230,13 @@ class _AboutScreenState extends State<AboutScreen> {
                         SizedBox(height: 10),
                         Text('03',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
+                              textStyle: accentText18,
+
                             )),
                         SizedBox(height: 5),
                         Text('PROTOTYPE',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
+                              textStyle: whiteText18,
                             )),
                       ],
                     ),
@@ -263,18 +251,14 @@ class _AboutScreenState extends State<AboutScreen> {
                       children: [
                         Image.asset('assets/icons/image3.png'),
                         SizedBox(height: 10),
-                        Text('03',
+                        Text('04',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
+                              textStyle: accentText18,
                             )),
                         SizedBox(height: 5),
                         Text('PROTOTYPE',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
+                              textStyle: whiteText18,
                             )),
                       ],
                     ),Column(
@@ -282,18 +266,14 @@ class _AboutScreenState extends State<AboutScreen> {
                       children: [
                         Image.asset('assets/icons/image3.png'),
                         SizedBox(height: 10),
-                        Text('03',
+                        Text('05',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w500,
+                              textStyle: accentText18,
                             )),
                         SizedBox(height: 5),
                         Text('PROTOTYPE',
                             style: GoogleFonts.lato(
-                              fontSize: 18,
-                              color: whitee,
-                              fontWeight: FontWeight.w500,
+                              textStyle: whiteText18,
                             )),
                       ],
                     ),
