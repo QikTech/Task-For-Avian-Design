@@ -8,7 +8,6 @@ import 'package:task_for_avian_design/screens/contact.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get.dart';
 
-
 import '../typography.dart';
 
 class ServicesScreen extends StatefulWidget {
@@ -17,9 +16,10 @@ class ServicesScreen extends StatefulWidget {
 }
 
 class _ServicesScreenState extends State<ServicesScreen> {
-  goToNext(){
+  goToNext() {
     Get.to(ContactScreen());
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,10 +28,27 @@ class _ServicesScreenState extends State<ServicesScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 180, 40, 20),
+              padding: const EdgeInsets.fromLTRB(40, 80, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  RichText(
+                    textAlign: TextAlign.left,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: 'Our ',
+                            style: GoogleFonts.lato(
+                              textStyle: whiteHeading32,
+                            )),
+                        TextSpan(
+                            text: 'Services',
+                            style: GoogleFonts.lato(
+                              textStyle: accentHeading32,
+                            )),
+                      ],
+                    ),
+                  ),
                   SizedBox(height: 40),
                   SingleChildScrollView(
                     scrollDirection: Axis.vertical,
@@ -48,15 +65,18 @@ class _ServicesScreenState extends State<ServicesScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
-                                  topRight: const Radius.circular(8.0),),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),
+                                ),
                                 child: Image.asset(
                                   'assets/icons/service1.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -68,16 +88,17 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                     SizedBox(height: 20),
                                     Text('2 Weeks (25 Screens)',
                                         style: GoogleFonts.lato(
-                                            textStyle: whiteRegular22,
+                                          textStyle: whiteRegular22,
                                         )),
                                     SizedBox(height: 10),
                                     Text(
                                         '- Define Goals \n- User Personas \n- User Interviews \n- Use Case Scenario \n- Brainstorming \n- Impact vs Feasibility Analysis \n- Wireframing \n- High Fidelity Screens \n- Responsive Design \n- Prototype',
                                         style: GoogleFonts.lato(
-                                            textStyle: whiteLight22,
+                                          textStyle: whiteLight22,
                                         )),
                                     SizedBox(height: 20),
-                                    Text('Effort Est: 100 - 120 Hours \nPrice: 20 USD/Hour',
+                                    Text(
+                                        'Effort Est: 100 - 120 Hours \nPrice: 20 USD/Hour',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
                                         )),
@@ -87,7 +108,8 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                         Expanded(
                                           flex: 2,
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text('From:',
                                                   style: GoogleFonts.lato(
@@ -152,15 +174,18 @@ class _ServicesScreenState extends State<ServicesScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
-                                  topRight: const Radius.circular(8.0),),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),
+                                ),
                                 child: Image.asset(
                                   'assets/icons/service2.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -173,8 +198,10 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                     Text('4 Weeks (100 Screens)',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
-                                        )),SizedBox(height: 20),
-                                    Text('Everything in the \nConcept package +',
+                                        )),
+                                    SizedBox(height: 20),
+                                    Text(
+                                        'Everything in the \nConcept package +',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
                                         )),
@@ -185,7 +212,8 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                           textStyle: whiteLight22,
                                         )),
                                     SizedBox(height: 20),
-                                    Text('Effort Est: 225 - 300 Hours \nPrice: 20 USD/Hour',
+                                    Text(
+                                        'Effort Est: 225 - 300 Hours \nPrice: 20 USD/Hour',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
                                         )),
@@ -195,7 +223,8 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                         Expanded(
                                           flex: 2,
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text('From:',
                                                   style: GoogleFonts.lato(
@@ -259,15 +288,18 @@ class _ServicesScreenState extends State<ServicesScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               ClipRRect(
-                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
-                                  topRight: const Radius.circular(8.0),),
+                                borderRadius: BorderRadius.only(
+                                  topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),
+                                ),
                                 child: Image.asset(
                                   'assets/icons/service3.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -280,18 +312,22 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                     Text('Variable',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
-                                        )),SizedBox(height: 20),
-                                    Text('Get a series of sprints tailored \nto design your product for scale',
+                                        )),
+                                    SizedBox(height: 20),
+                                    Text(
+                                        'Get a series of sprints tailored \nto design your product for scale',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
                                         )),
                                     SizedBox(height: 10),
-                                    Text('- Define \n- Empathise \n- Ideate \n- Prototype \n- User Testing \n- Re-iterate \n- Final Design \n\nLet us set up your design team!',
+                                    Text(
+                                        '- Define \n- Empathise \n- Ideate \n- Prototype \n- User Testing \n- Re-iterate \n- Final Design \n\nLet us set up your design team!',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteLight22,
                                         )),
                                     SizedBox(height: 20),
-                                    Text('Effort Est: 500+ Hours \nPrice: 15 USD/Hour',
+                                    Text(
+                                        'Effort Est: 500+ Hours \nPrice: 15 USD/Hour',
                                         style: GoogleFonts.lato(
                                           textStyle: whiteRegular22,
                                         )),
@@ -301,7 +337,8 @@ class _ServicesScreenState extends State<ServicesScreen> {
                                         Expanded(
                                           flex: 2,
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text('From:',
                                                   style: GoogleFonts.lato(

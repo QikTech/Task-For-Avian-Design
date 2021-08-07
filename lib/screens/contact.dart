@@ -21,14 +21,27 @@ class _ContactScreenState extends State<ContactScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 180, 20, 20),
+              padding: const EdgeInsets.fromLTRB(40, 80, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Contact Us?',
-                      style: GoogleFonts.lato(
-                        textStyle: regularHeading28,
-                      )),
+                  RichText(
+                    textAlign: TextAlign.left,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: 'Contact ',
+                            style: GoogleFonts.lato(
+                              textStyle: whiteHeading32,
+                            )),
+                        TextSpan(
+                            text: 'Us',
+                            style: GoogleFonts.lato(
+                              textStyle: accentHeading32,
+                            )),
+                      ],
+                    ),
+                  ),
                   SizedBox(
                     height: 40,
                   ),

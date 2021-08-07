@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 180, 20, 20),
+              padding: const EdgeInsets.fromLTRB(40, 80, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,6 +37,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: GoogleFonts.lato(
                         textStyle: boldHeading28,
                       )),
+                  Divider(
+                      color: accentt,
+                    endIndent: 240,
+                  ),
                   SizedBox(
                     height: 100,
                   ),

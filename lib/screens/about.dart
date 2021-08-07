@@ -21,7 +21,7 @@ class _AboutScreenState extends State<AboutScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 180, 20, 20),
+              padding: const EdgeInsets.fromLTRB(40, 80, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
