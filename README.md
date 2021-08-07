@@ -14,12 +14,12 @@ Aim is to Design a Application for Avian Design that includes Home Screen, About
     
 
 # Screenshots
-![] (https://i.pinimg.com/originals/09/20/f5/0920f503cef790f30ba819e5bcca9bc9.jpg)
+![](https://i.pinimg.com/originals/09/20/f5/0920f503cef790f30ba819e5bcca9bc9.jpg)
 
-![] (https://i.pinimg.com/originals/45/5b/eb/455bebe506727c3b8c57e43edc873ba8.jpg)
+![](https://i.pinimg.com/originals/45/5b/eb/455bebe506727c3b8c57e43edc873ba8.jpg)
 
-![] (https://i.pinimg.com/originals/21/3a/b5/213ab5cd28df3ec2588a4ba521a87f0f.jpg)
+![](https://i.pinimg.com/originals/21/3a/b5/213ab5cd28df3ec2588a4ba521a87f0f.jpg)
 
-![] (https://i.pinimg.com/originals/7f/a2/8e/7fa28ec354aa07beb23748fc84e53a60.jpg)
+![](https://i.pinimg.com/originals/7f/a2/8e/7fa28ec354aa07beb23748fc84e53a60.jpg)
 
 # Total Hours Spent 3+9
