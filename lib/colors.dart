@@ -13,3 +13,4 @@ Color whitee = Color(0xFFFFFFFF);
 Color yellow = Color(0xFFFED47E);
 Color pink = Color(0xFFFFABC8);
 Color purple = Color(0xFF7768D8);
+Color grayy = Color(0xFFAAAAAA);

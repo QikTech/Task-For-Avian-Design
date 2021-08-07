@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:task_for_avian_design/colors.dart';
+import 'package:task_for_avian_design/screens/about.dart';
 import 'package:task_for_avian_design/screens/home.dart';
 
 class Landing extends StatefulWidget {
@@ -12,9 +13,10 @@ class _LandingState extends State<Landing> {
   int currentIndex = 0;
   List listOfColors = [
     HomeScreen(),
-    Container(color: Colors.orangeAccent,),
+    AboutScreen(),
     Container(color: Colors.redAccent,),
     Container(color: Colors.greenAccent,),
+    // Container(color: Colors.greenAccent,),
   ];
 
   @override
