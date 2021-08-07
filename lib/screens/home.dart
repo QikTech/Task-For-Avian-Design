@@ -187,7 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: GoogleFonts.lato(
                     fontSize: 32,
                     wordSpacing: 8,
-                    color: grayy,
+                      color: whitee,
                     fontWeight: FontWeight.w900,
                   )),
               SizedBox(height: 30),
@@ -210,6 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.fromLTRB(40,8,40,40),
                 child: Text(
                     'We collaborate with you and your team to empathise, be creative, and run successful Design Sprints to leverage Design Thinking in your product journey!',
+                    textAlign: TextAlign.justify,
                     style: GoogleFonts.lato(
                       fontSize: 18,
                       color: whitee,

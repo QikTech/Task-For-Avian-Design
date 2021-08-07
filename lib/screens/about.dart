@@ -1,4 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task_for_avian_design/colors.dart';
@@ -42,16 +43,19 @@ class _AboutScreenState extends State<AboutScreen> {
                   ),
                 ),
                 SizedBox(height: 40),
-                Row(
-                  children: [
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('50+',
+                        Text('Reliable',
                             style: GoogleFonts.lato(
                               fontSize: 18,
-                              color: accentt,
-                              fontWeight: FontWeight.w400,
+                              color: yellow,
+                              fontWeight: FontWeight.bold,
                             )),
+                        SizedBox(height: 10),
                         Container(
                           height: 200,
                           width: 140,
@@ -59,206 +63,246 @@ class _AboutScreenState extends State<AboutScreen> {
                             color: yellow,
                             borderRadius: new BorderRadius.circular(16.0),
                           ),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      height: 200,
-                      width: 140,
-                      decoration: new BoxDecoration(
-                        color: pink,
-                        borderRadius: new BorderRadius.circular(16.0),
-                      ),
-                    ),
-                    Container(
-                      height: 200,
-                      width: 140,
-                      decoration: new BoxDecoration(
-                        color: purple,
-                        borderRadius: new BorderRadius.circular(16.0),
-                      ),
-                    ),
-                  ],
-                ),
-                Container(
-                  height: 300,
-                  width: 400,
-                  decoration: new BoxDecoration(
-                    color: bgColor2,
-                    borderRadius: new BorderRadius.circular(16.0),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(25.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          flex: 3,
-                          child: RichText(
-                            textAlign: TextAlign.left,
-                            text: TextSpan(
-                              // text: 'Design is for ',
-                              children: <TextSpan>[
-                                TextSpan(
-                                    text: 'Design is for ',
-                                    style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: whitee,
-                                      fontWeight: FontWeight.w800,
-                                    )),
-                                TextSpan(
-                                    text: 'People',
-                                    style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: accentt,
-                                      fontWeight: FontWeight.w800,
-                                    )),
-                                TextSpan(
-                                    text: '\n Not Products',
-                                    style: GoogleFonts.lato(
-                                      fontSize: 28,
-                                      color: whitee,
-                                      fontWeight: FontWeight.w800,
-                                    )),
-                              ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              'We believe in long-lasting relationships based on trust and reliability; we have a very professional workflow and follow the design sprint framework.',
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.lato(
+                                letterSpacing: -0.4,
+                                height: 0.9,
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),
-                        Expanded(
-                          flex: 1,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('30+',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                  Text('Clients',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                ],
+                      ],
+                    ),
+                    SizedBox(width: 20),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Empathetic',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: pink,
+                              fontWeight: FontWeight.bold,
+                            )),
+                        SizedBox(height: 10),
+                        Container(
+                          height: 200,
+                          width: 140,
+                          decoration: new BoxDecoration(
+                            color: pink,
+                            borderRadius: new BorderRadius.circular(16.0),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              'Throughout life, experiences are what stay and shape our perception, we strive to give you as well as your customers a memorable and pleasant experience.',
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.lato(
+                                letterSpacing: -0.8,
+                                height: 0.9,
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
                               ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('50+',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                  Text('Projects',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('75%',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                  Text('Retention',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                ],
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text('15+',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: accentt,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                  Text('Team',
-                                      style: GoogleFonts.lato(
-                                        fontSize: 18,
-                                        color: whitee,
-                                        fontWeight: FontWeight.w400,
-                                      )),
-                                ],
-                              ),
-                            ],
+                            ),
                           ),
                         ),
                       ],
                     ),
+                    SizedBox(width: 20),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Agile',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: purple,
+                              fontWeight: FontWeight.bold,
+                            )),
+                        SizedBox(height: 10),
+                        Container(
+                          height: 200,
+                          width: 140,
+                          decoration: new BoxDecoration(
+                            color: purple,
+                            borderRadius: new BorderRadius.circular(16.0),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              'We know in today’s fast moving world, time is of the essence. We make sure we do your job as efficiently and promptly as possible.',
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.lato(
+                                letterSpacing: -0.4,
+                                height: 0.9,
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 20),
+                  ]),
+                ), //CARDS HORIZONTAL
+                SizedBox(height: 100),
+                Center(
+                  child: RichText(
+                    textAlign: TextAlign.left,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                            text: 'How we ',
+                            style: GoogleFonts.lato(
+                              fontSize: 32,
+                              color: whitee,
+                              fontWeight: FontWeight.w800,
+                            )),
+                        TextSpan(
+                            text: 'do it?',
+                            style: GoogleFonts.lato(
+                              fontSize: 32,
+                              color: accentt,
+                              fontWeight: FontWeight.w800,
+                            )),
+                      ],
+                    ),
                   ),
-                ), //Card End
+                ), //HOW WE DO IT
                 SizedBox(
                   height: 40,
                 ),
-                Text("Let's discuss your project  ->",
-                    style: GoogleFonts.lato(
-                      fontSize: 24,
-                      color: accentt,
-                      fontWeight: FontWeight.w600,
-                    )), //Let's discuss your project
-                SizedBox(
-                  height: 40,
+                Center(
+                  child: Text('DESIGN SPRINTS',
+                      style: GoogleFonts.lato(
+                        fontSize: 18,
+                        color: accentt,
+                        fontWeight: FontWeight.bold,
+                      )),
+                ), //DESIGN SPRINTS
+                SizedBox(height: 50),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/icons/image1.png'),
+                        SizedBox(height: 10),
+                        Text('01',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: accentt,
+                              fontWeight: FontWeight.w500,
+                            )),
+                        SizedBox(height: 5),
+                        Text('EMPATHISE',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: whitee,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/icons/image2.png'),
+                        SizedBox(height: 10),
+                        Text('02',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: accentt,
+                              fontWeight: FontWeight.w500,
+                            )),
+                        SizedBox(height: 5),
+                        Text('IDEATE',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: whitee,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/icons/image3.png'),
+                        SizedBox(height: 10),
+                        Text('03',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: accentt,
+                              fontWeight: FontWeight.w500,
+                            )),
+                        SizedBox(height: 5),
+                        Text('PROTOTYPE',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: whitee,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ],
+                    ),
+                  ],
                 ),
+                SizedBox(height: 50),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/icons/image3.png'),
+                        SizedBox(height: 10),
+                        Text('03',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: accentt,
+                              fontWeight: FontWeight.w500,
+                            )),
+                        SizedBox(height: 5),
+                        Text('PROTOTYPE',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: whitee,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ],
+                    ),Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Image.asset('assets/icons/image3.png'),
+                        SizedBox(height: 10),
+                        Text('03',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: accentt,
+                              fontWeight: FontWeight.w500,
+                            )),
+                        SizedBox(height: 5),
+                        Text('PROTOTYPE',
+                            style: GoogleFonts.lato(
+                              fontSize: 18,
+                              color: whitee,
+                              fontWeight: FontWeight.w500,
+                            )),
+                      ],
+                    ),
+                  ],
+                ),//Graphic 5 ELEMENTS
               ],
             ),
           ),
-          Center(child: Image.asset('assets/icons/ICO_down-arrow.png')),
           SizedBox(height: 80),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text('Why? How? What?',
-                  style: GoogleFonts.lato(
-                    fontSize: 32,
-                    wordSpacing: 8,
-                    color: grayy,
-                    fontWeight: FontWeight.w900,
-                  )),
-              SizedBox(height: 30),
-              Text('Making design thinking easy for Startups!',
-                  style: GoogleFonts.lato(
-                    fontSize: 16,
-                    color: whitee,
-                    fontWeight: FontWeight.normal,
-                  )),
-              Center(child: Image.asset('assets/icons/peoples.png')),
-              SizedBox(height: 30),
-              Text('We are all about Design!',
-                  style: GoogleFonts.lato(
-                    fontSize: 18,
-                    color: whitee,
-                    fontWeight: FontWeight.bold,
-                  )),
-              SizedBox(height: 30),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(40, 8, 40, 40),
-                child: Text(
-                    'We collaborate with you and your team to empathise, be creative, and run successful Design Sprints to leverage Design Thinking in your product journey!',
-                    style: GoogleFonts.lato(
-                      fontSize: 18,
-                      color: whitee,
-                      fontWeight: FontWeight.bold,
-                    )),
-              ),
-            ],
-          ),
         ],
       ),
     );

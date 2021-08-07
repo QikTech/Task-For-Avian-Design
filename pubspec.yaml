@@ -50,6 +50,14 @@ flutter:
   assets:
     - assets/icons/ICO_down-arrow.png
     - assets/icons/peoples.png
+    - assets/icons/image1.png
+    - assets/icons/image2.png
+    - assets/icons/image3.png
+    - assets/icons/image4.png
+    - assets/icons/image5.png
+    - assets/icons/service1.png
+    - assets/icons/service2.png
+    - assets/icons/service3.png
 #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
