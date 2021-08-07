@@ -1,7 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="qiktech.dev.task_for_avian_design">
-   <application
-        android:label="task_for_avian_design"
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="Avian Design by Prasad Sawant"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

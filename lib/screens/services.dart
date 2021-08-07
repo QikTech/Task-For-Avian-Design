@@ -47,7 +47,14 @@ class _ServicesScreenState extends State<ServicesScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset('assets/icons/service1.png'),
+                              ClipRRect(
+                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),),
+                                child: Image.asset(
+                                  'assets/icons/service1.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(
@@ -144,7 +151,14 @@ class _ServicesScreenState extends State<ServicesScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset('assets/icons/service3.png'),
+                              ClipRRect(
+                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),),
+                                child: Image.asset(
+                                  'assets/icons/service2.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(
@@ -244,7 +258,14 @@ class _ServicesScreenState extends State<ServicesScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Image.asset('assets/icons/service2.png'),
+                              ClipRRect(
+                                borderRadius: BorderRadius.only(topLeft: const Radius.circular(8.0),
+                                  topRight: const Radius.circular(8.0),),
+                                child: Image.asset(
+                                  'assets/icons/service3.png',
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(28, 0, 28, 0),
                                 child: Column(

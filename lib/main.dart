@@ -17,14 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        textTheme: const TextTheme(
-          headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-          headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-          bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
-        ),
       ),
       home: AnimatedSplashScreen(
-        backgroundColor: bgColor1,
+        backgroundColor: bgColor2,
         duration: 1,
         splash: ClipRRect(
           borderRadius: BorderRadius.circular(10),
